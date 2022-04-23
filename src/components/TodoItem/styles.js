@@ -5,13 +5,13 @@ import { BsTrash } from 'react-icons/bs'
 export const Container = styled.div`
     display: flex;
    
-    width: min(1000px, 85vw);
+    width: min(1200px, 85vw);
     background-color: #9999A1 ;
     min-height: 35px;
-    height: 50px;
+    height: 70px;
     margin: 10px;
     justify-content: flex-start;
-    border-radius: 10px;
+    border-radius: 20px;
 
     :hover{
         .options{

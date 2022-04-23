@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { TodoContext } from '../../contexts/TodoContext'
 import * as C from './styles'
 
@@ -7,6 +7,10 @@ export default function AddTodo(){
     const {setTodoList, todoList} = useContext(TodoContext)
 
     const handleInputChange = e => setInput(e.target.value)
+
+    useEffect(()=>{
+        localStorage.setItem('todolist', JSON.stringify(todoList))
+    }, [todoList])
 
     const handleSubmit = e =>{
         e.preventDefault();
@@ -20,7 +24,6 @@ export default function AddTodo(){
                 }
             )
                 setInput('')
-
         }
   
     }
