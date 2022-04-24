@@ -16,8 +16,7 @@ export const Container = styled.div`
     :hover{
         .options{
             display: flex;
-            justify-content: flex-end;
-            margin-right: 10px;
+            
         }
     }
 `
@@ -70,6 +69,15 @@ export const Options = styled.div`
     width: 20%;
     height: 100%;
     align-items: center;
+    justify-content:flex-end;
+    padding-right: 25px;
+
+    @media(max-width: 580px ){
+        display: flex;
+        justify-content: center;
+    
+        
+    }
 
 
 `
@@ -80,5 +88,10 @@ export const Trash = styled(BsTrash)`
 
     :hover{
         cursor: pointer;
+    }
+
+    @media(max-width: 580px){
+        width: 35px;
+        height: 20px;
     }
 `

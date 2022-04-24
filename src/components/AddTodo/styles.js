@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { AiOutlinePlus } from 'react-icons/ai'
+
 export const Container = styled.div`
     margin: 20px 0px 30px 0;
     height: 60px;
@@ -14,18 +16,37 @@ export const Wrapper = styled.div`
 `
 
 export const Form = styled.form`
-height: 100%;
+    height: 100%;
+    display: flex;
 
 `
 
 export const Input = styled.input `
-    padding: 10px;
+    padding: 20px;
     outline: none;
-    width: 100%;
+    width: 94%;
     height: 100%;
     background-color: transparent;
     border: none;
     font-size: 24px;
+
+    ::placeholder{
+        color: #999999;
+    }
+    @media(max-width: 580px){
+        width: 90%;
+    }
+
+`
+
+export const SubmitBtn = styled(AiOutlinePlus)`
+    fill: #E6E6E9;
+    width: 30px;
+    height: 30px;
+    :hover{
+        cursor: pointer;
+    }
+
 
 `
 

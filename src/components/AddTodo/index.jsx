@@ -32,7 +32,8 @@ export default function AddTodo(){
         <C.Container>
             <C.Wrapper>
                 <C.Form onSubmit={handleSubmit}>
-                    <C.Input value={input} onChange={handleInputChange}/>
+                    <C.Input placeholder='Type the items here...' value={input} onChange={handleInputChange}/>
+                    <button><C.SubmitBtn/></button>
                 </C.Form>
             </C.Wrapper>
         </C.Container>

@@ -13,6 +13,11 @@ export const GlobalStyle = createGlobalStyle`
         color: white;
     }
 
+    button {
+        border: none;
+        background-color: transparent;
+
+    }
     html{
         height: 100%;
     }
